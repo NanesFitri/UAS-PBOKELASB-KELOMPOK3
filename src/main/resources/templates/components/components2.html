@@ -1,0 +1,33 @@
+<div th:fragment="navbarr">
+ <!-- header section start -->
+     <div class="header_section">
+        <div class="container-fluid">
+           <nav class="navbar navbar-light bg-light justify-content-between">
+              <div id="mySidenav" class="sidenav">
+                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                 <a th:href="@{/}">Home</a>
+                 <!-- <a th:href="@{/pro}">Products</a> -->
+                 <!-- <a href="about.html">About</a>
+                 <a href="client.html">Client</a>
+                 <a href="contact.html">Contact</a> -->
+              </div>
+              <span class="toggle_icon" onclick="openNav()"><img src="/images/toggle-icon.png"></span>
+              <a class="logo" href="#"><img src="/images/removebg.png"></a>
+              <a class="nav-link" th:href="@{/product/}">Produk</a>
+              <a class="nav-link" th:href="@{/user/}">User</a>
+              <a class="nav-link" th:href="@{/customer/}">Customer</a>
+              <a class="nav-link" th:href="@{/productcategory/}">Kategori Produk</a>
+              <a class="nav-link" th:href="@{/orders/}">Order</a>
+              <a class="nav-link" th:href="@{/orderitem/}">Order item</a>
+              <form class="form-inline ">
+                 <div class="login_text">
+                    <ul>
+                       <li><a href="#"><img src="/images/search-icon.png"></a></li>
+                    </ul>
+                 </div>
+              </form>
+           </nav>
+        </div>
+     </div>
+     <!-- header section end -->
+    </div> 
